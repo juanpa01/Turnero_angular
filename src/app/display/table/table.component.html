@@ -1,0 +1,16 @@
+<div class="container">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Turno</th>
+        <th scope="col">Asesor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr  *ngFor="let dis of display">
+        <td>{{ dis.name }}</td>
+        <td>{{ dis.adviserId }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

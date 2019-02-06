@@ -1,0 +1,22 @@
+<br>
+<strong> Tiempo promedio por turno: </strong>  {{average.minutes}} minutos
+
+<div class="tabla">
+    <table class="table">
+        <thead>
+            <tr>
+            <th scope="col">Turno</th>
+            <th scope="col">Asesor</th>
+            <th scope="col">Tiempo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let listReport of listReports">
+                <td>{{ listReport.name }} </td>
+                <td> {{ listReport.adviserId }} </td>
+                <td> {{ listReport.minutes }} minutos </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+

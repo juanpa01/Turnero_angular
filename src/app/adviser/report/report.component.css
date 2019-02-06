@@ -1,0 +1,10 @@
+.report {
+    border: 1px solid black;
+    height: 450px;
+    width: 500px;
+}
+
+.tabla {
+    overflow-y: auto;
+    height: 400px;
+}

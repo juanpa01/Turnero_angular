@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col">
+    <h5>Perdidos</h5>
+  </div>
+</div>
+<br>
+
+<div class="tabla">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Turno</th>
+            <th scope="col">Asesor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let lost of losts">
+            <td>{{ lost.name }} </td>
+            <td> {{ lost.adviserId }} </td>
+            <td>
+              <button class="btn btn-success" (click)="onClickReCall(lost)">
+                Llamar Perdido
+              </button>
+            </td>
+          </tr>
+        </tbody>
+    </table>
+</div>
+

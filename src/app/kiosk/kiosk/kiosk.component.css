@@ -1,0 +1,12 @@
+.kiosk {
+	width: 80%;
+	text-align: center;
+}
+
+.kiosk h2 {
+	font-size: 5em;
+}
+
+.lista-categorias {
+	margin: 20px;
+}
