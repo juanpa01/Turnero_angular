@@ -19,6 +19,10 @@ export class AdviserComponent implements OnInit {
   constructor(private service: AdviserService) { }
 
   ngOnInit() { 
+    this.average = {
+      minutes: 0
+    }
+
     this.service.getlost()
                 .subscribe(losts => {
                   this.losts = losts;
